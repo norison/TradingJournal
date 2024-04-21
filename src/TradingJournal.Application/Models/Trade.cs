@@ -14,4 +14,10 @@ public class Trade
     public Session Session { get; set; }
     public Direction Direction { get; set; }
     public Position Position { get; set; }
+    public string Notes { get; set; } = string.Empty;
+    public decimal RiskPercent { get; set; }
+    public decimal EntryPrice { get; set; }
+    public decimal? ExitPrice { get; set; }
+    public decimal? StopLoss { get; set; }
+    public decimal? TakeProfit { get; set; }
 }
