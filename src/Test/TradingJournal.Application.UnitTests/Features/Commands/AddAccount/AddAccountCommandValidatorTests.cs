@@ -87,9 +87,7 @@ public class AddAccountCommandValidatorTests : TestBase
     }
     
     [Theory]
-    [InlineData(null)]
-    [InlineData("")]
-    [InlineData(" ")]
+    [MemberData(nameof(InvalidDescriptionData))]
     public async Task GivenInvalidCommand_WhenInvalidDescription_ThenShouldFail(string description)
     {
         // Arrange
@@ -101,4 +99,10 @@ public class AddAccountCommandValidatorTests : TestBase
         // Assert
         result.ShouldHaveValidationErrorFor(x => x.Description);
     }
+    
+    public static IEnumerable<object[]> InvalidDescriptionData =>
+        new List<object[]>
+        {
+            new object[] { new string('a', 501) }
+        };
 }
