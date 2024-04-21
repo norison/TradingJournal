@@ -6,6 +6,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradingJournal.MemoryPersis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradingJournal.DeviceUI", "TradingJournal.DeviceUI\TradingJournal.DeviceUI.csproj", "{34E8108C-4765-407B-93F0-18D041DFEF45}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{D84FDC56-EEB7-41EA-844C-9524A8338895}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradingJournal.Application.UnitTests", "Test\TradingJournal.Application.UnitTests\TradingJournal.Application.UnitTests.csproj", "{E732948F-6F3C-4328-8502-D997D7F6D14E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,12 @@ Global
 		{34E8108C-4765-407B-93F0-18D041DFEF45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34E8108C-4765-407B-93F0-18D041DFEF45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34E8108C-4765-407B-93F0-18D041DFEF45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E732948F-6F3C-4328-8502-D997D7F6D14E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E732948F-6F3C-4328-8502-D997D7F6D14E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E732948F-6F3C-4328-8502-D997D7F6D14E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E732948F-6F3C-4328-8502-D997D7F6D14E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E732948F-6F3C-4328-8502-D997D7F6D14E} = {D84FDC56-EEB7-41EA-844C-9524A8338895}
 	EndGlobalSection
 EndGlobal
