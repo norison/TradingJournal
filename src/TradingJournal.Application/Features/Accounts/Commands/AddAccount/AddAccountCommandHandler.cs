@@ -1,12 +1,12 @@
 ﻿using Mediator;
-using TradingJournal.Application.Abstractions;
+using TradingJournal.Application.Abstractions.Storages.Accounts;
 using TradingJournal.Application.Abstractions.Storages.Accounts.Models.AddAccount;
 
 namespace TradingJournal.Application.Features.Accounts.Commands.AddAccount;
 
-public class AddAccountCommandHandler(IAccountsStorage accountsStorage) : ICommandHandler<AddAccountCommand, int>
+public class AddAccountCommandHandler(IAccountsStorage accountsStorage) : ICommandHandler<AddAccountCommand, long>
 {
-    public async ValueTask<int> Handle(AddAccountCommand command, CancellationToken cancellationToken)
+    public async ValueTask<long> Handle(AddAccountCommand command, CancellationToken cancellationToken)
     {
         var addAccountModel = new AddAccountModel
         {

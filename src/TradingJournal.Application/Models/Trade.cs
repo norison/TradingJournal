@@ -4,7 +4,7 @@ namespace TradingJournal.Application.Models;
 
 public class Trade
 {
-    public int Id { get; set; }
+    public long Id { get; set; }
     public DateTime EntryDateTime { get; set; }
     public DateTime? ExitDateTime { get; set; }
     public Account Account { get; set; } = new();

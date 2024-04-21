@@ -1,9 +1,8 @@
 ﻿using FluentValidation;
 using Mediator;
 using Microsoft.Extensions.Logging;
-using TradingJournal.Application.Abstractions;
+using TradingJournal.Application.Abstractions.Storages.Accounts;
 using TradingJournal.Application.Behaviors;
-using TradingJournal.MemoryPersistence.Implementations;
 
 namespace TradingJournal.DeviceUI;
 
@@ -28,7 +27,6 @@ public static class MauiProgram
         builder.Services.AddMediator(options => options.ServiceLifetime = ServiceLifetime.Singleton);
         builder.Services.AddSingleton(typeof(ValidationBehavior<,>), typeof(IPipelineBehavior<,>));
         builder.Services.AddValidatorsFromAssemblies(assemblies, ServiceLifetime.Singleton);
-        builder.Services.AddSingleton<IAccountsStorage, AccountsStorage>();
         
         return builder.Build();
     }

@@ -3,7 +3,7 @@ using TradingJournal.Application.Models.Enums;
 
 namespace TradingJournal.Application.Features.Accounts.Commands.AddAccount;
 
-public class AddAccountCommand : ICommand<int>
+public class AddAccountCommand : ICommand<long>
 {
     public string Name { get; set; } = string.Empty;
     public decimal RiskBalance { get; set; }

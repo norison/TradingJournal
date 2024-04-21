@@ -2,7 +2,7 @@
 using FluentAssertions;
 using NSubstitute;
 using PAP.NSubstitute.FluentAssertionsBridge;
-using TradingJournal.Application.Abstractions;
+using TradingJournal.Application.Abstractions.Storages.Accounts;
 using TradingJournal.Application.Abstractions.Storages.Accounts.Models.AddAccount;
 using TradingJournal.Application.Features.Accounts.Commands.AddAccount;
 
