@@ -12,8 +12,4 @@
       <PackageReference Include="Riok.Mapperly" Version="3.5.0" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Exceptions\" />
-    </ItemGroup>
-
 </Project>

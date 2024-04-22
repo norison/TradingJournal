@@ -1,9 +1,11 @@
-﻿using TradingJournal.Application.Models.Enums;
+﻿using Mediator;
+using TradingJournal.Application.Models.Enums;
 
-namespace TradingJournal.Application.Abstractions.Storages.Accounts.Models.AddAccount;
+namespace TradingJournal.Application.Features.Accounts.Commands.UpdateAccount;
 
-public class AddAccountModel
+public class UpdateAccountCommand : ICommand
 {
+    public long Id { get; set; }
     public string Name { get; set; } = string.Empty;
     public decimal RiskBalance { get; set; }
     public AccountType Type { get; set; }

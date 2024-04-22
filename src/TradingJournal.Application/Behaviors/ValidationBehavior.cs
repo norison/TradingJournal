@@ -1,5 +1,6 @@
 ﻿using FluentValidation;
 using Mediator;
+using TradingJournal.Application.Exceptions;
 
 namespace TradingJournal.Application.Behaviors;
 
@@ -33,6 +34,8 @@ public sealed class ValidationBehavior<TMessage, TResponse>(IEnumerable<IValidat
             return await next(message, cancellationToken);
         }
 
-        throw new ValidationException(validationFailures);
+        var firstError = validationFailures.First().ErrorMessage;
+        
+        throw new ModelValidationException(firstError);
     }
 }

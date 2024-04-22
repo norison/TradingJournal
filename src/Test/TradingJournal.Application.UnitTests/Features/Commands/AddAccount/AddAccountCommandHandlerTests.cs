@@ -3,7 +3,7 @@ using FluentAssertions;
 using NSubstitute;
 using PAP.NSubstitute.FluentAssertionsBridge;
 using TradingJournal.Application.Abstractions.Storages.Accounts;
-using TradingJournal.Application.Abstractions.Storages.Accounts.Models.AddAccount;
+using TradingJournal.Application.Abstractions.Storages.Accounts.Models;
 using TradingJournal.Application.Features.Accounts.Commands.AddAccount;
 
 namespace TradingJournal.Application.UnitTests.Features.Commands.AddAccount;
@@ -31,6 +31,6 @@ public class AddAccountCommandHandlerTests : TestBase
         // Assert
         await _accountsStorage
             .Received(1)
-            .AddAccountAsync(Verify.That<AddAccountModel>(model => model.Should().BeEquivalentTo(command)));
+            .AddAccountAsync(Verify.That<AddUpdateAccountModel>(model => model.Should().BeEquivalentTo(command)));
     }
 }

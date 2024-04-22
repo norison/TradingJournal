@@ -20,6 +20,6 @@ public class Trade
     public decimal EntryPrice { get; set; }
     public decimal? ExitPrice { get; set; }
     public decimal StopLoss { get; set; }
-    public decimal TakeProfit { get; set; }
+    public decimal? TakeProfit { get; set; }
     public IEnumerable<Image> Images { get; set; } = Enumerable.Empty<Image>();
 }
