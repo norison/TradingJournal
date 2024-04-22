@@ -71,6 +71,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\TradingJournal.Application\TradingJournal.Application.csproj" />
+      <ProjectReference Include="..\TradingJournal.CsvPersistence\TradingJournal.CsvPersistence.csproj" />
     </ItemGroup>
 
 </Project>
