@@ -34,8 +34,11 @@ jobs:
       - name: Test
         run: dotnet test --no-build --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:Threshold=90 /p:ThresholdType=line /p:ThresholdStat=total
 
+      - name: Merge Coverage Results
+        run: reportgenerator "-reports:./src/Test/**/coverage.cobertura.xml" "-targetdir:coveragereport" -reporttypes:Cobertura
+
       - name: Publish Coverage Results
         uses: codecov/codecov-action@v2
         with:
-          files: ./src/**/coverage.cobertura.xml
+          files: ./coveragereport/coverage.cobertura.xml
           fail_ci_if_error: true
