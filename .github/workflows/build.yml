@@ -32,16 +32,4 @@ jobs:
         run: dotnet build --no-restore
 
       - name: Test
-        run: dotnet test --no-build --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:Threshold=50 /p:ThresholdType=line /p:ThresholdStat=total
-
-      - name: Install ReportGenerator tool
-        run: dotnet tool install --global dotnet-reportgenerator-globaltool
-
-      - name: Merge Coverage Results
-        run: reportgenerator "-reports:${{ github.workspace }}/**/coverage.cobertura.xml" "-targetdir:coveragereport" -reporttypes:Cobertura
-
-      - name: Publish Coverage Results
-        uses: codecov/codecov-action@v2
-        with:
-          files: ${{ github.workspace }}/coveragereport/Cobertura.xml
-          fail_ci_if_error: true
+        run: dotnet test --no-build --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:Threshold=70 /p:ThresholdType=line /p:ThresholdStat=total
