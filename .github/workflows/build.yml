@@ -38,10 +38,10 @@ jobs:
         run: dotnet tool install --global dotnet-reportgenerator-globaltool
 
       - name: Merge Coverage Results
-        run: reportgenerator "-reports:${{ github.workspace }}/**/coverage.cobertura.xml" "-targetdir:coveragereport" -reporttypes:Cobertura
+        run: reportgenerator "-reports:./**/coverage.cobertura.xml" "-targetdir:coveragereport" -reporttypes:Cobertura
 
       - name: Publish Coverage Results
         uses: codecov/codecov-action@v2
         with:
-          files: ${{ github.workspace }}/coveragereport/coverage.cobertura.xml
+          files: ./coveragereport/Cobertura.xml
           fail_ci_if_error: true
