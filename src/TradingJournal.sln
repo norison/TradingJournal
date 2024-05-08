@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Norison.TradingJournal.Appl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Norison.TradingJournal.SqlitePersistence", "Norison.TradingJournal.SqlitePersistence\Norison.TradingJournal.SqlitePersistence.csproj", "{299D3C23-4160-4F66-BF89-99E280071B8B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Norison.TradingJournal.WpfDesktop", "Norison.TradingJournal.WpfDesktop\Norison.TradingJournal.WpfDesktop.csproj", "{6AE02F9B-8C82-459E-98BB-6C74A004E7DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{299D3C23-4160-4F66-BF89-99E280071B8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{299D3C23-4160-4F66-BF89-99E280071B8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{299D3C23-4160-4F66-BF89-99E280071B8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AE02F9B-8C82-459E-98BB-6C74A004E7DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AE02F9B-8C82-459E-98BB-6C74A004E7DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AE02F9B-8C82-459E-98BB-6C74A004E7DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AE02F9B-8C82-459E-98BB-6C74A004E7DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E732948F-6F3C-4328-8502-D997D7F6D14E} = {D84FDC56-EEB7-41EA-844C-9524A8338895}

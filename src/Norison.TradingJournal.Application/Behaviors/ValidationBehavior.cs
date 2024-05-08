@@ -34,7 +34,7 @@ public sealed class ValidationBehavior<TMessage, TResponse>(IEnumerable<IValidat
             return await next(message, cancellationToken);
         }
 
-        var firstError = validationFailures.First().ErrorMessage;
+        var firstError = validationFailures[0].ErrorMessage;
         
         throw new ModelValidationException(firstError);
     }
