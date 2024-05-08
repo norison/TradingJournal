@@ -11,6 +11,11 @@
 
     <ItemGroup>
       <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="8.0.21" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.4" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.4">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
       <PackageReference Include="Syncfusion.Blazor.Core" Version="25.1.42" />
       <PackageReference Include="Syncfusion.Blazor.Navigations" Version="25.1.42" />
       <PackageReference Include="Syncfusion.Blazor.Themes" Version="25.1.42" />
@@ -20,6 +25,11 @@
       <None Update="wwwroot\index.html">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Norison.TradingJournal.Application\Norison.TradingJournal.Application.csproj" />
+      <ProjectReference Include="..\Norison.TradingJournal.SqlitePersistence\Norison.TradingJournal.SqlitePersistence.csproj" />
     </ItemGroup>
 
 </Project>

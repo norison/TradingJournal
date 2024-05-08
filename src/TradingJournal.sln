@@ -6,7 +6,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{D84FDC56-E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Norison.TradingJournal.Application.UnitTests", "Test\Norison.TradingJournal.Application.UnitTests\Norison.TradingJournal.Application.UnitTests.csproj", "{E732948F-6F3C-4328-8502-D997D7F6D14E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Norison.TradingJournal.EfPersistence", "Norison.TradingJournal.EfPersistence\Norison.TradingJournal.EfPersistence.csproj", "{299D3C23-4160-4F66-BF89-99E280071B8B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Norison.TradingJournal.SqlitePersistence", "Norison.TradingJournal.SqlitePersistence\Norison.TradingJournal.SqlitePersistence.csproj", "{299D3C23-4160-4F66-BF89-99E280071B8B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Norison.TradingJournal.WpfDesktop", "Norison.TradingJournal.WpfDesktop\Norison.TradingJournal.WpfDesktop.csproj", "{6AE02F9B-8C82-459E-98BB-6C74A004E7DD}"
 EndProject

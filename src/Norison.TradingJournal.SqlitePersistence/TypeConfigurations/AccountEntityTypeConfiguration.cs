@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Norison.TradingJournal.EfPersistence.Entities;
+using Norison.TradingJournal.SqlitePersistence.Entities;
 
-namespace Norison.TradingJournal.EfPersistence.TypeConfigurations;
+namespace Norison.TradingJournal.SqlitePersistence.TypeConfigurations;
 
 public class AccountEntityTypeConfiguration : IEntityTypeConfiguration<AccountEntity>
 {

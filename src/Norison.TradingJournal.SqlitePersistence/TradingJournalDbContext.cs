@@ -1,11 +1,20 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Norison.TradingJournal.EfPersistence.Entities;
+﻿using System.Diagnostics.CodeAnalysis;
+using Microsoft.EntityFrameworkCore;
+using Norison.TradingJournal.SqlitePersistence.Entities;
 
-namespace Norison.TradingJournal.EfPersistence;
+namespace Norison.TradingJournal.SqlitePersistence;
 
-public class TradingJournalDbContext(DbContextOptions<TradingJournalDbContext> options) : DbContext(options)
+[ExcludeFromCodeCoverage]
+public class TradingJournalDbContext : DbContext
 {
     public DbSet<AccountEntity> Accounts { get; set; }
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        base.OnConfiguring(optionsBuilder);
+
+        optionsBuilder.UseSqlite("Data Source=trading-journal.db");
+    }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

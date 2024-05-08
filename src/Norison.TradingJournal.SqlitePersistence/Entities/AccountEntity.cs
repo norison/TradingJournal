@@ -1,6 +1,6 @@
 ﻿using Norison.TradingJournal.Application.Models.Enums;
 
-namespace Norison.TradingJournal.EfPersistence.Entities;
+namespace Norison.TradingJournal.SqlitePersistence.Entities;
 
 public class AccountEntity
 {
