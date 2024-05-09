@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     defaults:
       run:
@@ -24,6 +24,9 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: 8.0.x
+          
+      - name: Install MAUI workloads
+        run: dotnet workload install maui-android maui-ios --skip-manifest-update
 
       - name: Restore dependencies
         run: dotnet restore

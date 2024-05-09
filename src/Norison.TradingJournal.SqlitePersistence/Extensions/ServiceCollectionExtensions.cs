@@ -1,5 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
-using Microsoft.EntityFrameworkCore;
+using System.Diagnostics.CodeAnalysis;
 using Microsoft.Extensions.DependencyInjection;
 using Norison.TradingJournal.Application.Abstractions.Storages.Accounts;
 using Norison.TradingJournal.SqlitePersistence.Implementations;

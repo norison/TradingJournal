@@ -1,14 +1,17 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Norison.TradingJournal.Application", "Norison.TradingJournal.Application\Norison.TradingJournal.Application.csproj", "{6CC87C39-A92B-477A-8EEE-7114242BA65E}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Norison.TradingJournal.Application", "Norison.TradingJournal.Application\Norison.TradingJournal.Application.csproj", "{6CC87C39-A92B-477A-8EEE-7114242BA65E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{D84FDC56-EEB7-41EA-844C-9524A8338895}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Norison.TradingJournal.Application.UnitTests", "Test\Norison.TradingJournal.Application.UnitTests\Norison.TradingJournal.Application.UnitTests.csproj", "{E732948F-6F3C-4328-8502-D997D7F6D14E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Norison.TradingJournal.Application.UnitTests", "Test\Norison.TradingJournal.Application.UnitTests\Norison.TradingJournal.Application.UnitTests.csproj", "{E732948F-6F3C-4328-8502-D997D7F6D14E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Norison.TradingJournal.SqlitePersistence", "Norison.TradingJournal.SqlitePersistence\Norison.TradingJournal.SqlitePersistence.csproj", "{299D3C23-4160-4F66-BF89-99E280071B8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Norison.TradingJournal.SqlitePersistence", "Norison.TradingJournal.SqlitePersistence\Norison.TradingJournal.SqlitePersistence.csproj", "{299D3C23-4160-4F66-BF89-99E280071B8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Norison.TradingJournal.WpfDesktop", "Norison.TradingJournal.WpfDesktop\Norison.TradingJournal.WpfDesktop.csproj", "{6AE02F9B-8C82-459E-98BB-6C74A004E7DD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Norison.TradingJournal.DeviceUI", "Norison.TradingJournal.DeviceUI\Norison.TradingJournal.DeviceUI.csproj", "{2D46C2DE-0AA6-42C6-BA52-8229681F77ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,12 +31,20 @@ Global
 		{299D3C23-4160-4F66-BF89-99E280071B8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{299D3C23-4160-4F66-BF89-99E280071B8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{299D3C23-4160-4F66-BF89-99E280071B8B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6AE02F9B-8C82-459E-98BB-6C74A004E7DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6AE02F9B-8C82-459E-98BB-6C74A004E7DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6AE02F9B-8C82-459E-98BB-6C74A004E7DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6AE02F9B-8C82-459E-98BB-6C74A004E7DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D46C2DE-0AA6-42C6-BA52-8229681F77ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D46C2DE-0AA6-42C6-BA52-8229681F77ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D46C2DE-0AA6-42C6-BA52-8229681F77ED}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2D46C2DE-0AA6-42C6-BA52-8229681F77ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D46C2DE-0AA6-42C6-BA52-8229681F77ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D46C2DE-0AA6-42C6-BA52-8229681F77ED}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E732948F-6F3C-4328-8502-D997D7F6D14E} = {D84FDC56-EEB7-41EA-844C-9524A8338895}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {756A42C2-FAE6-4DD9-99CF-01DBDD85AC07}
 	EndGlobalSection
 EndGlobal
