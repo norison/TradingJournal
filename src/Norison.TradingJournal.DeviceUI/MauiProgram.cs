@@ -34,11 +34,6 @@ namespace Norison.TradingJournal.DeviceUI
 
             var app = builder.Build();
 
-            app.Services
-                .GetRequiredService<IDbContextFactory<TradingJournalDbContext>>()
-                .CreateDbContext()
-                .Database.Migrate();
-
             return app;
         }
     }
